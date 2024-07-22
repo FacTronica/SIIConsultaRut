@@ -19,7 +19,7 @@ A continuaci√≥n se detalla el procedimiento a seguir para realizar la integraci√
 -   [03.-Interpretar Respuesta Json] 
 
 
-## JSON CONSULTAR DATOS RUT
+## EJEMPLO PHP: JSON CONSULTAR DATOS RUT (json_datos.php)
 ````
 <?php
 $datos_consultarut = array(
@@ -44,8 +44,39 @@ JnqDfIrSPYshHU4o57fJ7vzG
 ?>
 ````
 
+## EJEMPLO PHP: ENVIAR JSON (json_envia.php)
+````
+<?php
+function JsonEnviar($arregloJson,$url){
+    $payload = json_encode($arregloJson);
+    $curl = curl_init($url);
+    curl_setopt($curl, CURLOPT_HEADER, false);
+    curl_setopt($curl, CURLOPT_PORT,443);
+    curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
+    curl_setopt($curl, CURLOPT_HTTPHEADER,array("Content-type: application/json"));
+    curl_setopt($curl, CURLOPT_POST, true);
+    curl_setopt($curl, CURLOPT_POSTFIELDS,$payload);
+    $json_response = curl_exec($curl);
+    $status = curl_getinfo($curl, CURLINFO_HTTP_CODE);
+    curl_close($curl);
+    return $json_response;
+}
+?>
+````
 
-
+## EJEMPLO PHP: ENVIAR JSON Y CAPTURAR RESPUESTA
+````
+<?php
+include("json_envia.php");
+include("json_datos.php");
+$url_api="url-end-point";
+$retorno=JsonEnviar($arregloJson,$url_api);
+$jsonArray  = json_decode($retorno,true);
+echo "<pre>";
+var_dump($jsonArray);
+echo "</pre>";
+?>
+````
  
 
 
