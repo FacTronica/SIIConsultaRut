@@ -78,5 +78,158 @@ echo "</pre>";
 ?>
 ````
  
-
-
+## EJEMPLO : RESPUESTA FORMATO ARRAY
+````
+array(6) {
+  [0]=>
+  array(7) {
+    ["Rut"]=>
+    string(10) "77777777-7"
+    ["RazonSocial"]=>
+    string(14) "EMPRESA PRUEBA"
+    ["Consulta"]=>
+    string(16) "22-07-2024 11:13"
+    ["TieneActividades"]=>
+    string(2) "SI"
+    ["FechaInicio"]=>
+    string(10) "05-04-2016"
+    ["MonedaExtranjera"]=>
+    string(2) "NO"
+    ["MenorTamano"]=>
+    string(2) "SI"
+  }
+  [1]=>
+  array(3) {
+    [1]=>
+    array(5) {
+      ["Actividad"]=>
+      string(70) "VENTA AL POR MENOR DE COMPUTADORES, EQUIPO PERIFERICO, PROGRAMAS INFOR"
+      ["Codigo"]=>
+      string(6) "474100"
+      ["Categoria"]=>
+      string(7) "Primera"
+      ["AfectaIva"]=>
+      string(2) "Si"
+      ["Fecha"]=>
+      string(10) "05-04-2016"
+    }
+    [2]=>
+    array(5) {
+      ["Actividad"]=>
+      string(70) "ACTIVIDADES DE CONSULTORIA DE INFORMATICA Y DE GESTION DE INSTALACIONE"
+      ["Codigo"]=>
+      string(6) "620200"
+      ["Categoria"]=>
+      string(7) "Primera"
+      ["AfectaIva"]=>
+      string(2) "Si"
+      ["Fecha"]=>
+      string(10) "05-04-2016"
+    }
+    [3]=>
+    array(5) {
+      ["Actividad"]=>
+      string(32) "OTROS TIPOS DE ENSEÑANZA N.C.P."
+      ["Codigo"]=>
+      string(6) "854909"
+      ["Categoria"]=>
+      string(7) "Primera"
+      ["AfectaIva"]=>
+      string(2) "No"
+      ["Fecha"]=>
+      string(10) "09-04-2021"
+    }
+  }
+  [2]=>
+  array(7) {
+    [1]=>
+    array(2) {
+      ["Documento"]=>
+      string(19) "Factura Electronica"
+      ["UltimoTimbraje"]=>
+      string(4) "2020"
+    }
+    [2]=>
+    array(2) {
+      ["Documento"]=>
+      string(38) "Factura No Afecta O Exenta Electronica"
+      ["UltimoTimbraje"]=>
+      string(4) "2023"
+    }
+    [3]=>
+    array(2) {
+      ["Documento"]=>
+      string(18) "Boleta Electronica"
+      ["UltimoTimbraje"]=>
+      string(4) "2022"
+    }
+    [4]=>
+    array(2) {
+      ["Documento"]=>
+      string(25) "Boleta Exenta Electronica"
+      ["UltimoTimbraje"]=>
+      string(4) "2022"
+    }
+    [5]=>
+    array(2) {
+      ["Documento"]=>
+      string(23) "Nota Debito Electronica"
+      ["UltimoTimbraje"]=>
+      string(4) "2016"
+    }
+    [6]=>
+    array(2) {
+      ["Documento"]=>
+      string(24) "Nota Credito Electronica"
+      ["UltimoTimbraje"]=>
+      string(4) "2022"
+    }
+    [7]=>
+    array(2) {
+      ["Documento"]=>
+      string(31) "Boleta De Terceros Electronicas"
+      ["UltimoTimbraje"]=>
+      string(4) "2024"
+    }
+  }
+  [3]=>
+  array(9) {
+    ["rut"]=>
+    string(8) "77777777"
+    ["dv"]=>
+    string(1) "7"
+    ["fecha"]=>
+    string(10) "2019-06-11"
+    ["calle"]=>
+    string(12) "ALAMEDA 340"
+    ["numero"]=>
+    string(3) "199"
+    ["bloque"]=>
+    string(0) ""
+    ["departamento"]=>
+    string(2) "62"
+    ["villapoblacion"]=>
+    string(0) ""
+    ["comuna"]=>
+    string(11) "PROVIDENCIA"
+  }
+  [4]=>
+  array(5) {
+    ["razon_social"]=>
+    string(14) "EMPRESA PRUEBA SPA"
+    ["num_resolucion"]=>
+    string(2) "80"
+    ["fecha_resolucion"]=>
+    string(10) "22-08-2014"
+    ["email"]=>
+    string(39) "intercambio@gmail.com"
+    ["url"]=>
+    string(17) "www.website.cl"
+  }
+  [5]=>
+  array(1) {
+    ["nombre"]=>
+    NULL
+  }
+}
+````
