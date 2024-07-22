@@ -10,7 +10,13 @@ El objetivo de esta api es entregar la información necesaria para automatizar e
 
 **Código Abierto:** Al comprar la API Servidor Se entrega el código fuente.
 
-## Documentación
+## Página para Consultar Rut
+
+En la siguiente URL puede digitar directamente un rut y consultar los datos.   
+El formato a digitar es 11111111-1  ( Sin puntos y con guión )   
+URL CONSULTAR RUT: https://servidor8.sistemafactronica.cl/api/factronica_sii_consultarut/index.php
+
+## Documentación para Integración por Api Rest
 
 A continuación se detalla el procedimiento a seguir para realizar la integración.
 
